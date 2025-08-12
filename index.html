@@ -4,13 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>abbas – studyportal</title>
-  <meta name="description" content="abbas – studyportal: student visa guides, courses by Abbas, and a community discussion space." />
+  <meta name="description" content="abbas – studyportal: student visa guides, trending computer courses by Abbas, and a community discussion space." />
   <link rel="stylesheet" href="./style.css" />
-  <!-- Optional favicon: put one at ./assets/favicon.ico -->
   <link rel="icon" href="./assets/favicon.ico" />
 </head>
 <body>
-  <!-- Header & Nav -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="abbas – studyportal">
@@ -19,8 +18,8 @@
       </a>
       <nav class="nav">
         <a class="nav-link" href="#visas">Student Visas</a>
-        <a class="nav-link" href="#courses">Courses</a>
-        <a class="nav-link" href="#discussion">Discussion</a>
+        <a class="nav-link" href="#courses">Courses by Abbas</a>
+        <a class="nav-link" href="#discussion">Discussion & Stories</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </div>
@@ -29,126 +28,348 @@
   <main class="container">
     <!-- Hero -->
     <section class="hero">
-      <h1>Your hub for study abroad guidance, courses, and community</h1>
-      <p class="lead">Clear visa checklists, practical courses taught by Abbas, and a place to share real stories.</p>
+      <h1>Your hub for study abroad guidance, trending tech courses, and community</h1>
+      <p class="lead">Flip the cards to see quick checklists, syllabi, and links.</p>
     </section>
 
-    <!-- Student Visas -->
+    <!-- Student Visas (FLASHCARDS) -->
     <section id="visas" class="section">
       <div class="section-head">
         <h2>Student Visas</h2>
-        <p class="muted">Plain-English steps, required documents, and official links.</p>
+        <p class="muted">Plain-English steps, documents, and official links.</p>
       </div>
 
       <div class="grid">
-        <a class="card" href="./canada.html">
-          <h3>Canada</h3>
-          <p>Study permit steps, biometrics, fees, timelines.</p>
-        </a>
-        <a class="card" href="./uk.html">
-          <h3>United Kingdom</h3>
-          <p>Student Route (Tier 4), CAS, IHS surcharge, docs.</p>
-        </a>
-        <a class="card" href="./germany.html">
-          <h3>Germany</h3>
-          <p>National Visa (D), blocked account, APS, insurance.</p>
-        </a>
-        <a class="card" href="./italy.html">
-          <h3>Italy</h3>
-          <p>Type D visa, proof of funds, accommodation, enrollment.</p>
-        </a>
-        <a class="card" href="./china.html">
-          <h3>China</h3>
-          <p>X1/X2 visas, JW201/JW202, medical, registration.</p>
-        </a>
-      </div>
-      <div class="inline-note muted">
-        Tip: each country page has a short checklist you can print or save.
+        <!-- Card: Canada -->
+        <div class="flip" role="button" tabindex="0" aria-label="Canada study visa card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Canada</h3>
+              <p>Study permit • Biometrics • Fees</p>
+              <span class="badge">IRCC</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Letter of Acceptance (DLI)</li>
+                <li>Proof of funds / GIC</li>
+                <li>Biometrics & medical</li>
+                <li>Online application (IRCC)</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="./canada.html">Full guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UK -->
+        <div class="flip" role="button" tabindex="0" aria-label="UK study visa card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>United Kingdom</h3>
+              <p>Student Route (Tier 4) • CAS</p>
+              <span class="badge">UKVI</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>CAS from university</li>
+                <li>IHS surcharge payment</li>
+                <li>Funds & documents</li>
+                <li>Biometrics / visa centre</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="./uk.html">Full guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Germany -->
+        <div class="flip" role="button" tabindex="0" aria-label="Germany study visa card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Germany</h3>
+              <p>National Visa (D) • APS</p>
+              <span class="badge">Embassy</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Admission letter</li>
+                <li>Blocked account & insurance</li>
+                <li>APS (if required)</li>
+                <li>Visa interview</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="./germany.html">Full guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Italy -->
+        <div class="flip" role="button" tabindex="0" aria-label="Italy study visa card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Italy</h3>
+              <p>Type D visa • Funds • Accommodation</p>
+              <span class="badge">VFS</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>University enrollment</li>
+                <li>Proof of funds & housing</li>
+                <li>Insurance & photos</li>
+                <li>Book via VFS (where applicable)</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="./italy.html">Full guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- China -->
+        <div class="flip" role="button" tabindex="0" aria-label="China study visa card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>China</h3>
+              <p>X1/X2 visas • JW201/JW202</p>
+              <span class="badge">Embassy</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Admission + JW form</li>
+                <li>Medical exam</li>
+                <li>Visa application</li>
+                <li>Registration on arrival</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="./china.html">Full guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Courses by Abbas -->
+    <!-- Courses by Abbas (FLASHCARDS with trending computer topics) -->
     <section id="courses" class="section">
       <div class="section-head">
         <h2>Courses by Abbas</h2>
-        <p class="muted">Practical, outcomes-focused modules. Add/adjust titles as you like.</p>
+        <p class="muted">Trending, job-ready computer courses with projects.</p>
       </div>
 
       <div class="grid">
-        <div class="card">
-          <h3>Study Abroad Roadmap (4 weeks)</h3>
-          <ul class="list">
-            <li>Shortlisting countries & universities</li>
-            <li>Scholarship strategy & budgeting</li>
-            <li>Timeline planner + document pack</li>
-          </ul>
-          <a class="btn" href="#contact">Enroll / Ask details</a>
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>AI & Machine Learning</h3>
+              <p>Python • Scikit-learn • TensorFlow</p>
+              <span class="badge">4 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>ML pipeline & metrics</li>
+                <li>Classification & regression</li>
+                <li>Model serving basics</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>SOP & CV Clinic (2 weeks)</h3>
-          <ul class="list">
-            <li>Draft → Review → Final polish</li>
-            <li>ATS-friendly academic CV formatting</li>
-            <li>Sample bank + feedback loops</li>
-          </ul>
-          <a class="btn" href="#contact">Book a slot</a>
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Data Science & Analytics</h3>
+              <p>Pandas • SQL • Visualization</p>
+              <span class="badge">3 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>EDA & dashboards</li>
+                <li>Business KPIs</li>
+                <li>Storytelling with data</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Visa File Prep (1 week)</h3>
-          <ul class="list">
-            <li>Document checklists per country</li>
-            <li>Financials & proof of funds templates</li>
-            <li>Mock interview (where applicable)</li>
-          </ul>
-          <a class="btn" href="#contact">Get started</a>
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Full-Stack Web (React + Node)</h3>
+              <p>React • Next.js • REST</p>
+              <span class="badge">5 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Auth, CRUD, deployment</li>
+                <li>API design & testing</li>
+                <li>Project: Job board</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Mobile Apps (Flutter)</h3>
+              <p>UI • State • Firebase</p>
+              <span class="badge">4 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Layouts & navigation</li>
+                <li>Auth & Firestore</li>
+                <li>Play Store basics</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Cybersecurity Basics</h3>
+              <p>Networking • Threats • Linux</p>
+              <span class="badge">3 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Footprinting & OWASP</li>
+                <li>Secure coding</li>
+                <li>Hands-on labs</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>DevOps & Cloud</h3>
+              <p>Docker • CI/CD • AWS</p>
+              <span class="badge">4 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Containers & compose</li>
+                <li>GitHub Actions</li>
+                <li>Deploy to EC2</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>LLMs & Prompt Engineering</h3>
+              <p>Open-source models • RAG</p>
+              <span class="badge">2 weeks</span>
+            </div>
+            <div class="card-back">
+              <ul class="list">
+                <li>Prompt patterns</li>
+                <li>Local inference</li>
+                <li>Mini RAG app</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Enroll</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Discussion & Stories -->
+    <!-- Discussion & Stories (FLASHCARDS) -->
     <section id="discussion" class="section">
       <div class="section-head">
         <h2>Discussion & Stories</h2>
-        <p class="muted">Share experiences, ask questions, and learn from the community.</p>
+        <p class="muted">Share experiences, ask questions, and connect.</p>
       </div>
 
       <div class="grid">
-        <div class="card">
-          <h3>Share Your Story</h3>
-          <p>Tell others about your journey—applications, scholarships, interviews, or visa day tips.</p>
-          <!-- Option A: GitHub Discussions (enable in repo settings) -->
-          <a class="btn" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/discussions">Open Discussions</a>
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Share Your Story</h3>
+              <p>Applications, interviews, wins & lessons.</p>
+              <span class="badge">Community</span>
+            </div>
+            <div class="card-back">
+              <p>Post your journey to help others plan better.</p>
+              <div class="card-actions">
+                <a class="btn" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/discussions">Open Discussions</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Ask a Question</h3>
-          <p>Have a specific case? Post it so others can help.</p>
-          <!-- Option B: Issues as Q&A if you prefer -->
-          <a class="btn" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/issues/new">Ask via GitHub</a>
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Ask a Question</h3>
+              <p>Specific cases get specific answers.</p>
+              <span class="badge">Q&A</span>
+            </div>
+            <div class="card-back">
+              <p>Use GitHub Issues as a lightweight Q&A board.</p>
+              <div class="card-actions">
+                <a class="btn" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/issues/new">Ask on GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>WhatsApp Community</h3>
-          <p>Chat in real time with peers (moderated).</p>
-          <!-- Replace PHONE with your full number, e.g., 923001234567 -->
-          <a class="btn" target="_blank" rel="noopener" href="https://wa.me/PHONE">Join on WhatsApp</a>
+        <div class="flip" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>WhatsApp Group</h3>
+              <p>Real-time chat with peers (moderated).</p>
+              <span class="badge">Chat</span>
+            </div>
+            <div class="card-back">
+              <p>Join our WhatsApp community to discuss offers, timelines, and tips.</p>
+              <!-- Replace PHONE with full international number, e.g., 923001234567 -->
+              <div class="card-actions">
+                <a class="btn" target="_blank" rel="noopener" href="https://wa.me/PHONE">Join on WhatsApp</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="inline-note muted">
-        Prefer forms? Create a free Google Form and link it here for story submissions.
-      </div>
+      <p class="inline-note muted">Enable “Discussions” in repo settings to activate the Discussions link.</p>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section">
       <div class="section-head">
         <h2>Contact</h2>
-        <p class="muted">Reach out for course enrollment, file reviews, or collaboration.</p>
+        <p class="muted">Reach out for enrollment, document review, or collaboration.</p>
       </div>
-
       <div class="contact-grid">
         <div class="contact-card">
           <h3>WhatsApp</h3>
@@ -157,7 +378,6 @@
         </div>
         <div class="contact-card">
           <h3>Email</h3>
-          <!-- Replace with your address -->
           <p><a href="mailto:your@email.com">your@email.com</a></p>
         </div>
       </div>
@@ -173,7 +393,12 @@
   </footer>
 
   <script>
+    // Current year + tap-to-flip on mobile for accessibility
     document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.flip').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('flipped'));
+      card.addEventListener('keypress', e => { if(e.key==='Enter' || e.key===' ') card.classList.toggle('flipped'); });
+    });
   </script>
 </body>
 </html>
