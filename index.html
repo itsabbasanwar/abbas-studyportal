@@ -1,44 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Visa Guide</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Visa Guide</title>
+  <meta name="description" content="Clear, up-to-date guidance for student visa requirements by country." />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./assets/favicon.ico" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-logo" aria-hidden="true">🌍</span>
+        <span class="brand-text">Study Visa Guide</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link active" href="./index.html">Home</a>
+        <a class="nav-link" href="./canada.html">Canada</a>
+        <a class="nav-link" href="./uk.html">UK</a>
+        <a class="nav-link" href="./germany.html">Germany</a>
+        <a class="nav-link" href="./italy.html">Italy</a>
+        <a class="nav-link" href="./china.html">China</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <h1>🌍 Study Visa Guide</h1>
-        <p>Your one-stop guide for student visa requirements</p>
-    </header>
+  <main class="container">
+    <section class="hero">
+      <h1>Your one-stop guide for student visas</h1>
+      <p class="lead">
+        Plain-English checklists, eligibility notes, and official links—kept simple and accurate.
+      </p>
+    </section>
 
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./canada.html">Canada</a>
-        <a href="./uk.html">UK</a>
-        <a href="./germany.html">Germany</a>
-        <a href="./italy.html">Italy</a>
-        <a href="./china.html">China</a>
-    </nav>
+    <section class="grid">
+      <!-- Country cards -->
+      <a class="card" href="./canada.html">
+        <h3>Canada</h3>
+        <p>Study permit steps, biometrics, fees, and processing time.</p>
+      </a>
 
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>Choose a country to view study visa requirements:</p>
-            <ul>
-                <li><a href="./canada.html">Canada</a></li>
-                <li><a href="./uk.html">UK</a></li>
-                <li><a href="./germany.html">Germany</a></li>
-                <li><a href="./italy.html">Italy</a></li>
-                <li><a href="./china.html">China</a></li>
-            </ul>
-        </section>
-    </main>
+      <a class="card" href="./uk.html">
+        <h3>United Kingdom</h3>
+        <p>Student Route (Tier 4), CAS, IHS surcharge, and documents.</p>
+      </a>
 
-    <footer>
-        <p><strong>Disclaimer:</strong> We provide information related to fully funded scholarships only. No guaranteed outcomes or paid admissions. All opportunities require official application processes.</p>
-    </footer>
+      <a class="card" href="./germany.html">
+        <h3>Germany</h3>
+        <p>National visa (D), blocked account, health insurance, APS.</p>
+      </a>
 
+      <a class="card" href="./italy.html">
+        <h3>Italy</h3>
+        <p>Type D visa, proof of funds, accommodation, and enrollment.</p>
+      </a>
+
+      <a class="card" href="./china.html">
+        <h3>China</h3>
+        <p>X1/X2 visas, JW201/JW202, medical exam, and registration.</p>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> We share public information and guidance about fully funded opportunities only. No “done-base” or guaranteed outcomes. Always apply via official portals.</p>
+      <p class="muted">© <span id="year"></span> Study Visa Guide</p>
+    </div>
+  </footer>
+
+  <script>
+    // small enhancement: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
