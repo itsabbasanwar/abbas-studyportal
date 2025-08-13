@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>abbas – studyportal</title>
-  <meta name="description" content="abbas – studyportal: success stories, student visas, and courses." />
+  <meta name="description" content="abbas – studyportal: student visa guides, trending computer courses by Abbas, and a community discussion space." />
   <link rel="stylesheet" href="./style.css" />
   <link rel="icon" href="./assets/favicon.ico" />
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header (no country names in the top bar) -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="abbas – studyportal">
@@ -17,90 +17,194 @@
         <span class="brand-text">abbas – studyportal</span>
       </a>
       <nav class="nav">
-        <a class="nav-link" href="#stories">Success Stories</a>
-        <a class="nav-link" href="#student-visas">Student Visas</a>
-        <a class="nav-link" href="#courses">Courses</a>
+        <a class="nav-link" href="#visas">Student Visas</a>
+        <a class="nav-link" href="#courses">Courses by Abbas</a>
+        <a class="nav-link" href="#discussion">Discussion & Stories</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- Success Stories -->
-    <section id="stories" class="section">
-      <div class="section-head">
-        <h2>Success Stories</h2>
-        <p class="muted">Real journeys from admission to visa — short, honest, and helpful for the next student.</p>
-      </div>
-      <div class="grid">
-        <article class="card"><h3>Canada</h3><p>SDS permit in 6 weeks, first attempt success.</p></article>
-        <article class="card"><h3>UK</h3><p>CAS issued early, visa approved in record time.</p></article>
-        <article class="card"><h3>Germany</h3><p>APS cleared, blocked account verified, visa granted.</p></article>
-        <article class="card"><h3>Italy</h3><p>Type D visa with smooth VFS process.</p></article>
-        <article class="card"><h3>China</h3><p>X1 visa + registration done within deadlines.</p></article>
-      </div>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Your hub for study abroad guidance, trending tech courses, and community</h1>
+      <p class="lead">Flip the cards to see quick checklists, syllabi, and links.</p>
     </section>
 
-    <!-- Student Visas -->
-    <section id="student-visas" class="section">
+    <!-- FLASHCARDS (4 big entry cards) -->
+    <section class="grid cards-4">
+      <a class="flip hero-flip" href="#visas" aria-label="Student Visas">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Student Visas</h3>
+            <p>Checklists & official links</p>
+          </div>
+          <div class="card-back">
+            <p>Open the country list: Canada, UK, Germany, Italy, China.</p>
+            <span class="btn ghost">Open</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="flip hero-flip" href="#courses" aria-label="Courses by Abbas">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Courses by Abbas</h3>
+            <p>Trending computer courses</p>
+          </div>
+          <div class="card-back">
+            <p>AI/ML • Data • Web • Mobile • Cybersecurity • DevOps • LLMs</p>
+            <span class="btn ghost">View list</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="flip hero-flip" href="#discussion" aria-label="Discussion & Stories">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Discussion & Stories</h3>
+            <p>Share, ask, connect</p>
+          </div>
+          <div class="card-back">
+            <p>GitHub Discussions/Issues + WhatsApp group</p>
+            <span class="btn ghost">Join</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="flip hero-flip" href="#contact" aria-label="Contact">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Contact</h3>
+            <p>Email & WhatsApp</p>
+          </div>
+          <div class="card-back">
+            <p>Send us a message quickly</p>
+            <span class="btn ghost">Contact now</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Student Visas (countries appear here after clicking the top card) -->
+    <section id="visas" class="section">
       <div class="section-head">
         <h2>Student Visas</h2>
-        <p class="muted">Guides and requirements for top study destinations.</p>
+        <p class="muted">Plain-English steps, documents, and official links.</p>
       </div>
+
       <div class="grid">
-        <article class="card"><h3>Canada</h3><p>SDS & Non-SDS process, GIC, LoA requirements.</p></article>
-        <article class="card"><h3>UK</h3><p>CAS issuance, financial proofs, IHS payment.</p></article>
-        <article class="card"><h3>Germany</h3><p>APS, blocked account, embassy interview tips.</p></article>
-        <article class="card"><h3>Italy</h3><p>Type D visa checklist, accommodation proof.</p></article>
-        <article class="card"><h3>China</h3><p>JW form, medical exam, on-arrival registration.</p></article>
+        <a class="card" href="./canada.html"><h3>Canada</h3><p>Study permit • Biometrics • Fees</p></a>
+        <a class="card" href="./uk.html"><h3>United Kingdom</h3><p>Student Route (Tier 4) • CAS • IHS</p></a>
+        <a class="card" href="./germany.html"><h3>Germany</h3><p>National Visa (D) • APS • Insurance</p></a>
+        <a class="card" href="./italy.html"><h3>Italy</h3><p>Type D visa • Funds • Accommodation</p></a>
+        <a class="card" href="./china.html"><h3>China</h3><p>X1/X2 visas • JW201/JW202</p></a>
       </div>
     </section>
 
-    <!-- Courses by Abbas -->
+    <!-- Courses by Abbas (trending computer courses) -->
     <section id="courses" class="section">
       <div class="section-head">
         <h2>Courses by Abbas</h2>
-        <p class="muted">Trending computer-related courses for your career growth.</p>
+        <p class="muted">Trending, job-ready computer courses with projects.</p>
       </div>
+
       <div class="grid">
-        <article class="card"><h3>Python for Data Science</h3><p>From basics to advanced analytics with Pandas & NumPy.</p></article>
-        <article class="card"><h3>Machine Learning with TensorFlow</h3><p>Hands-on ML projects with deep learning models.</p></article>
-        <article class="card"><h3>Full-Stack Web Development</h3><p>HTML, CSS, JavaScript, React, and backend APIs.</p></article>
-        <article class="card"><h3>Cybersecurity Fundamentals</h3><p>Ethical hacking, penetration testing, and network defense.</p></article>
-        <article class="card"><h3>Cloud Computing with AWS</h3><p>Deploy and manage scalable applications on AWS.</p></article>
+        <div class="card"><h3>AI & Machine Learning</h3><p>Python • scikit-learn • TensorFlow</p></div>
+        <div class="card"><h3>Data Science & Analytics</h3><p>Pandas • SQL • Dashboards</p></div>
+        <div class="card"><h3>Full-Stack Web (React + Node)</h3><p>Auth • APIs • Deployment</p></div>
+        <div class="card"><h3>Mobile Apps (Flutter)</h3><p>UI • State • Firebase</p></div>
+        <div class="card"><h3>Cybersecurity Basics</h3><p>OWASP • Secure Coding • Labs</p></div>
+        <div class="card"><h3>DevOps & Cloud</h3><p>Docker • CI/CD • AWS</p></div>
+        <div class="card"><h3>LLMs & Prompt Engineering</h3><p>Open-source models • RAG</p></div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Discussion & Stories -->
+    <section id="discussion" class="section">
+      <div class="section-head">
+        <h2>Discussion & Stories</h2>
+        <p class="muted">Share experiences, ask questions, and connect.</p>
+      </div>
+
+      <div class="grid">
+        <a class="card" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/discussions">
+          <h3>Open Discussions</h3><p>Share your story & advice</p>
+        </a>
+        <a class="card" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/issues/new">
+          <h3>Ask a Question</h3><p>Lightweight Q&A using GitHub Issues</p>
+        </a>
+        <a class="card" target="_blank" rel="noopener" href="https://wa.me/923110907878">
+          <h3>WhatsApp Group</h3><p>Join via WhatsApp (+92 311 090 7878)</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact (form triggers email + WhatsApp compose) -->
     <section id="contact" class="section">
       <div class="section-head">
         <h2>Contact</h2>
-        <p class="muted">
-          Please avoid direct calls. First arrange a <strong>5-minute WhatsApp meeting</strong>; call afterwards if needed.
-        </p>
+        <p class="muted">Send a message and we’ll reply soon.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>WhatsApp</h3>
-          <p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/923110907878">Message on WhatsApp</a></p>
-          <p class="muted">+92 311 090 7878</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required />
         </div>
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p><a href="mailto:itsabbasanwar@gmail.com">itsabbasanwar@gmail.com</a></p>
+        <div class="field">
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required />
         </div>
-      </div>
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" rows="4" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p class="muted small">This static form opens your email app and WhatsApp with the message pre-filled.</p>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
+      <p><strong>Disclaimer:</strong> We share public information about fully funded opportunities only. No “done-base” or guaranteed outcomes. Always apply via official portals.</p>
       <p class="muted">© <span id="year"></span> abbas – studyportal</p>
     </div>
   </footer>
 
   <script>
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form: compose Email and WhatsApp (static-site friendly)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('name').value.trim());
+      const email = encodeURIComponent(document.getElementById('email').value.trim());
+      const msg = encodeURIComponent(document.getElementById('msg').value.trim());
+
+      // 1) Email compose (mailto)
+      const subject = encodeURIComponent('Studyportal inquiry');
+      const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${decodeURIComponent(msg)}`);
+      const mailto = `mailto:itsabbasanwar@gmail.com?subject=${subject}&body=${body}`;
+      window.open(mailto, '_blank');
+
+      // 2) WhatsApp compose (international format +92 311 090 7878)
+      const waText = encodeURIComponent(`Studyportal inquiry\nName: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\n${decodeURIComponent(msg)}`);
+      const wa = `https://wa.me/923110907878?text=${waText}`;
+      window.open(wa, '_blank');
+
+      // small UX reset
+      form.reset();
+    });
+
+    // Flip-on-click for mobile (hero cards)
+    document.querySelectorAll('.hero-flip').forEach(el => {
+      el.addEventListener('click', () => el.classList.toggle('flipped'));
+    });
   </script>
 </body>
 </html>
