@@ -9,7 +9,7 @@
   <link rel="icon" href="./assets/favicon.ico" />
 </head>
 <body>
-  <!-- Header (no country names in the top bar) -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="abbas – studyportal">
@@ -30,7 +30,7 @@
       <p class="lead">Flip the cards to see quick checklists, syllabi, and links.</p>
     </section>
 
-    <!-- FLASHCARDS (only Student Visas & Courses by Abbas) -->
+    <!-- FLASHCARDS -->
     <section class="grid cards-4">
       <a class="flip hero-flip" href="#visas" aria-label="Student Visas">
         <div class="card-inner">
@@ -92,6 +92,21 @@
         <div class="card"><h3>LLMs & Prompt Engineering</h3><p>Open-source models • RAG</p></div>
       </div>
     </section>
+
+    <!-- Reviews via WhatsApp -->
+    <section id="reviews" class="section">
+      <div class="section-head">
+        <h2>Leave a Review</h2>
+        <p class="muted">Share your feedback instantly via WhatsApp.</p>
+      </div>
+      <div class="card" style="text-align:center;padding:1.5rem;">
+        <p>Click below to send your review on WhatsApp. We’ll publish selected reviews on the site.</p>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/923110907878?text=Review%20for%20abbas%20%E2%80%93%20studyportal%3A%0A%0ARating%20(1-5)%3A%20%0AComment%3A%20%0AName%20(optional)%3A%20">
+          📱 Leave a review on WhatsApp
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -102,10 +117,7 @@
   </footer>
 
   <script>
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Flip-on-click for mobile (hero cards)
     document.querySelectorAll('.hero-flip').forEach(el => {
       el.addEventListener('click', () => el.classList.toggle('flipped'));
     });
