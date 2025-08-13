@@ -9,19 +9,7 @@
   <link rel="icon" href="./assets/favicon.ico" />
 </head>
 <body>
-          <!-- Site Header -->
-  <header>
-    <h1>Abbas – StudyPortal</h1>
-    <nav class="nav">
-      <a class="nav-link" href="./index.html">Home</a>
-      <a class="nav-link" href="./canada.html">Canada</a>
-      <a class="nav-link" href="./uk.html">UK</a>
-      <a class="nav-link" href="./germany.html">Germany</a>
-      <a class="nav-link" href="./italy.html">Italy</a>
-      <a class="nav-link" href="./china.html">China</a>
-    </nav>
-  </header>
-  <!-- Header -->
+  <!-- Header (no country names in the top bar) -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="abbas – studyportal">
@@ -44,7 +32,62 @@
       <p class="lead">Flip the cards to see quick checklists, syllabi, and links.</p>
     </section>
 
-    <!-- Student Visas (FLASHCARDS) -->
+    <!-- FLASHCARDS (4 big entry cards) -->
+    <section class="grid cards-4">
+      <a class="flip hero-flip" href="#visas" aria-label="Student Visas">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Student Visas</h3>
+            <p>Checklists & official links</p>
+          </div>
+          <div class="card-back">
+            <p>Open the country list: Canada, UK, Germany, Italy, China.</p>
+            <span class="btn ghost">Open</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="flip hero-flip" href="#courses" aria-label="Courses by Abbas">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Courses by Abbas</h3>
+            <p>Trending computer courses</p>
+          </div>
+          <div class="card-back">
+            <p>AI/ML • Data • Web • Mobile • Cybersecurity • DevOps • LLMs</p>
+            <span class="btn ghost">View list</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="flip hero-flip" href="#discussion" aria-label="Discussion & Stories">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Discussion & Stories</h3>
+            <p>Share, ask, connect</p>
+          </div>
+          <div class="card-back">
+            <p>GitHub Discussions/Issues + WhatsApp group</p>
+            <span class="btn ghost">Join</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="flip hero-flip" href="#contact" aria-label="Contact">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Contact</h3>
+            <p>Email & WhatsApp</p>
+          </div>
+          <div class="card-back">
+            <p>Send us a message quickly</p>
+            <span class="btn ghost">Contact now</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Student Visas (countries appear here after clicking the top card) -->
     <section id="visas" class="section">
       <div class="section-head">
         <h2>Student Visas</h2>
@@ -52,119 +95,15 @@
       </div>
 
       <div class="grid">
-        <!-- Card: Canada -->
-        <div class="flip" role="button" tabindex="0" aria-label="Canada study visa card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Canada</h3>
-              <p>Study permit • Biometrics • Fees</p>
-              <span class="badge">IRCC</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Letter of Acceptance (DLI)</li>
-                <li>Proof of funds / GIC</li>
-                <li>Biometrics & medical</li>
-                <li>Online application (IRCC)</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="./canada.html">Full guide</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- UK -->
-        <div class="flip" role="button" tabindex="0" aria-label="UK study visa card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>United Kingdom</h3>
-              <p>Student Route (Tier 4) • CAS</p>
-              <span class="badge">UKVI</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>CAS from university</li>
-                <li>IHS surcharge payment</li>
-                <li>Funds & documents</li>
-                <li>Biometrics / visa centre</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="./uk.html">Full guide</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Germany -->
-        <div class="flip" role="button" tabindex="0" aria-label="Germany study visa card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Germany</h3>
-              <p>National Visa (D) • APS</p>
-              <span class="badge">Embassy</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Admission letter</li>
-                <li>Blocked account & insurance</li>
-                <li>APS (if required)</li>
-                <li>Visa interview</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="./germany.html">Full guide</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Italy -->
-        <div class="flip" role="button" tabindex="0" aria-label="Italy study visa card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Italy</h3>
-              <p>Type D visa • Funds • Accommodation</p>
-              <span class="badge">VFS</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>University enrollment</li>
-                <li>Proof of funds & housing</li>
-                <li>Insurance & photos</li>
-                <li>Book via VFS (where applicable)</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="./italy.html">Full guide</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- China -->
-        <div class="flip" role="button" tabindex="0" aria-label="China study visa card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>China</h3>
-              <p>X1/X2 visas • JW201/JW202</p>
-              <span class="badge">Embassy</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Admission + JW form</li>
-                <li>Medical exam</li>
-                <li>Visa application</li>
-                <li>Registration on arrival</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="./china.html">Full guide</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a class="card" href="./canada.html"><h3>Canada</h3><p>Study permit • Biometrics • Fees</p></a>
+        <a class="card" href="./uk.html"><h3>United Kingdom</h3><p>Student Route (Tier 4) • CAS • IHS</p></a>
+        <a class="card" href="./germany.html"><h3>Germany</h3><p>National Visa (D) • APS • Insurance</p></a>
+        <a class="card" href="./italy.html"><h3>Italy</h3><p>Type D visa • Funds • Accommodation</p></a>
+        <a class="card" href="./china.html"><h3>China</h3><p>X1/X2 visas • JW201/JW202</p></a>
       </div>
     </section>
 
-    <!-- Courses by Abbas (FLASHCARDS with trending computer topics) -->
+    <!-- Courses by Abbas (trending computer courses) -->
     <section id="courses" class="section">
       <div class="section-head">
         <h2>Courses by Abbas</h2>
@@ -172,150 +111,17 @@
       </div>
 
       <div class="grid">
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>AI & Machine Learning</h3>
-              <p>Python • Scikit-learn • TensorFlow</p>
-              <span class="badge">4 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>ML pipeline & metrics</li>
-                <li>Classification & regression</li>
-                <li>Model serving basics</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Data Science & Analytics</h3>
-              <p>Pandas • SQL • Visualization</p>
-              <span class="badge">3 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>EDA & dashboards</li>
-                <li>Business KPIs</li>
-                <li>Storytelling with data</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Full-Stack Web (React + Node)</h3>
-              <p>React • Next.js • REST</p>
-              <span class="badge">5 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Auth, CRUD, deployment</li>
-                <li>API design & testing</li>
-                <li>Project: Job board</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Mobile Apps (Flutter)</h3>
-              <p>UI • State • Firebase</p>
-              <span class="badge">4 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Layouts & navigation</li>
-                <li>Auth & Firestore</li>
-                <li>Play Store basics</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Cybersecurity Basics</h3>
-              <p>Networking • Threats • Linux</p>
-              <span class="badge">3 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Footprinting & OWASP</li>
-                <li>Secure coding</li>
-                <li>Hands-on labs</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>DevOps & Cloud</h3>
-              <p>Docker • CI/CD • AWS</p>
-              <span class="badge">4 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Containers & compose</li>
-                <li>GitHub Actions</li>
-                <li>Deploy to EC2</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>LLMs & Prompt Engineering</h3>
-              <p>Open-source models • RAG</p>
-              <span class="badge">2 weeks</span>
-            </div>
-            <div class="card-back">
-              <ul class="list">
-                <li>Prompt patterns</li>
-                <li>Local inference</li>
-                <li>Mini RAG app</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn" href="#contact">Enroll</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <div class="card"><h3>AI & Machine Learning</h3><p>Python • scikit-learn • TensorFlow</p></div>
+        <div class="card"><h3>Data Science & Analytics</h3><p>Pandas • SQL • Dashboards</p></div>
+        <div class="card"><h3>Full-Stack Web (React + Node)</h3><p>Auth • APIs • Deployment</p></div>
+        <div class="card"><h3>Mobile Apps (Flutter)</h3><p>UI • State • Firebase</p></div>
+        <div class="card"><h3>Cybersecurity Basics</h3><p>OWASP • Secure Coding • Labs</p></div>
+        <div class="card"><h3>DevOps & Cloud</h3><p>Docker • CI/CD • AWS</p></div>
+        <div class="card"><h3>LLMs & Prompt Engineering</h3><p>Open-source models • RAG</p></div>
       </div>
     </section>
 
-    <!-- Discussion & Stories (FLASHCARDS) -->
+    <!-- Discussion & Stories -->
     <section id="discussion" class="section">
       <div class="section-head">
         <h2>Discussion & Stories</h2>
@@ -323,80 +129,44 @@
       </div>
 
       <div class="grid">
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Share Your Story</h3>
-              <p>Applications, interviews, wins & lessons.</p>
-              <span class="badge">Community</span>
-            </div>
-            <div class="card-back">
-              <p>Post your journey to help others plan better.</p>
-              <div class="card-actions">
-                <a class="btn" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/discussions">Open Discussions</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>Ask a Question</h3>
-              <p>Specific cases get specific answers.</p>
-              <span class="badge">Q&A</span>
-            </div>
-            <div class="card-back">
-              <p>Use GitHub Issues as a lightweight Q&A board.</p>
-              <div class="card-actions">
-                <a class="btn" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/issues/new">Ask on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip" role="button" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3>WhatsApp Group</h3>
-              <p>Real-time chat with peers (moderated).</p>
-              <span class="badge">Chat</span>
-            </div>
-            <div class="card-back">
-              <p>Join our WhatsApp community to discuss offers, timelines, and tips.</p>
-              <!-- Replace PHONE with full international number, e.g., 923001234567 -->
-              <div class="card-actions">
-                <a class="btn" target="_blank" rel="noopener" href="https://wa.me/PHONE">Join on WhatsApp</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a class="card" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/discussions">
+          <h3>Open Discussions</h3><p>Share your story & advice</p>
+        </a>
+        <a class="card" target="_blank" rel="noopener" href="https://github.com/itsabbasanwar/abbas-studyportal/issues/new">
+          <h3>Ask a Question</h3><p>Lightweight Q&A using GitHub Issues</p>
+        </a>
+        <a class="card" target="_blank" rel="noopener" href="https://wa.me/923110907878">
+          <h3>WhatsApp Group</h3><p>Join via WhatsApp (+92 311 090 7878)</p>
+        </a>
       </div>
-
-      <p class="inline-note muted">Enable “Discussions” in repo settings to activate the Discussions link.</p>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact (form triggers email + WhatsApp compose) -->
     <section id="contact" class="section">
       <div class="section-head">
         <h2>Contact</h2>
-        <p class="muted">Reach out for enrollment, document review, or collaboration.</p>
+        <p class="muted">Send a message and we’ll reply soon.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>WhatsApp</h3>
-          <p>Quick questions & scheduling.</p>
-          <a class="btn" target="_blank" rel="noopener" href="https://wa.me/PHONE">Message on WhatsApp</a>
+
+      <form id="contactForm" class="contact-form">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required />
         </div>
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p><a href="mailto:your@email.com">your@email.com</a></p>
+        <div class="field">
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required />
         </div>
-      </div>
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" rows="4" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p class="muted small">This static form opens your email app and WhatsApp with the message pre-filled.</p>
+      </form>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <p><strong>Disclaimer:</strong> We share public information about fully funded opportunities only. No “done-base” or guaranteed outcomes. Always apply via official portals.</p>
@@ -405,14 +175,36 @@
   </footer>
 
   <script>
-    // Current year + tap-to-flip on mobile for accessibility
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelectorAll('.flip').forEach(card => {
-      card.addEventListener('click', () => card.classList.toggle('flipped'));
-      card.addEventListener('keypress', e => { if(e.key==='Enter' || e.key===' ') card.classList.toggle('flipped'); });
+
+    // Contact form: compose Email and WhatsApp (static-site friendly)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('name').value.trim());
+      const email = encodeURIComponent(document.getElementById('email').value.trim());
+      const msg = encodeURIComponent(document.getElementById('msg').value.trim());
+
+      // 1) Email compose (mailto)
+      const subject = encodeURIComponent('Studyportal inquiry');
+      const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${decodeURIComponent(msg)}`);
+      const mailto = `mailto:itsabbasanwar@gmail.com?subject=${subject}&body=${body}`;
+      window.open(mailto, '_blank');
+
+      // 2) WhatsApp compose (international format +92 311 090 7878)
+      const waText = encodeURIComponent(`Studyportal inquiry\nName: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\n${decodeURIComponent(msg)}`);
+      const wa = `https://wa.me/923110907878?text=${waText}`;
+      window.open(wa, '_blank');
+
+      // small UX reset
+      form.reset();
+    });
+
+    // Flip-on-click for mobile (hero cards)
+    document.querySelectorAll('.hero-flip').forEach(el => {
+      el.addEventListener('click', () => el.classList.toggle('flipped'));
     });
   </script>
 </body>
 </html>
-
-
