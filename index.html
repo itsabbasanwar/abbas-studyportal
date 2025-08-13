@@ -4,11 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>abbas – studyportal</title>
-  <meta name="description" content="abbas – studyportal: success stories and direct contact via WhatsApp or email." />
+  <meta name="description" content="abbas – studyportal: success stories, student visa guidance, and courses by Abbas." />
   <link rel="stylesheet" href="./style.css" />
   <link rel="icon" href="./assets/favicon.ico" />
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="abbas – studyportal">
@@ -17,50 +18,132 @@
       </a>
       <nav class="nav">
         <a class="nav-link" href="#stories">Success Stories</a>
+        <a class="nav-link" href="#visas">Student Visas</a>
+        <a class="nav-link" href="#courses">Courses by Abbas</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- Success Stories -->
+    <!-- Success Stories (TOP) -->
     <section id="stories" class="section">
       <div class="section-head">
         <h2>Success Stories</h2>
-        <p class="muted">Real experiences from students who achieved their study abroad goals.</p>
+        <p class="muted">Real journeys from admission to visa — short, honest, and helpful for the next student.</p>
       </div>
 
       <div class="grid">
-        <div class="card"><h3>John – Canada</h3><p>Secured a study permit for Computer Science at UBC.</p></div>
-        <div class="card"><h3>Sara – UK</h3><p>Admitted to MSc AI at University of Edinburgh.</p></div>
-        <div class="card"><h3>Ali – Germany</h3><p>Got DAAD scholarship for Engineering in Berlin.</p></div>
-        <!-- Add more stories here -->
+        <article class="card">
+          <h3>Canada — SDS Permit in 6 Weeks</h3>
+          <p>LoA + GIC, clear SOP, smooth biometrics → approval in first attempt.</p>
+        </article>
+        <article class="card">
+          <h3>UK — CAS & IHS Done Right</h3>
+          <p>Early CAS, funds trail, IHS paid correctly → quick decision letter.</p>
+        </article>
+        <article class="card">
+          <h3>Germany — Blocked Account + APS</h3>
+          <p>APS cleared, blocked account set, thorough interview → visa granted.</p>
+        </article>
+        <article class="card">
+          <h3>Italy — Type D Visa</h3>
+          <p>Enrollment confirmed, accommodation & funds proof → VFS approval.</p>
+        </article>
+        <article class="card">
+          <h3>China — X1 Visa + Registration</h3>
+          <p>JW form + medical done; on-arrival registration completed smoothly.</p>
+        </article>
+      </div>
+
+      <p class="inline-note muted">Want your story featured? Email a short write-up and 1–2 tips that helped you.</p>
+    </section>
+
+    <!-- Student Visas: FLASHCARD + country list -->
+    <section id="visas" class="section">
+      <div class="section-head">
+        <h2>Student Visas</h2>
+        <p class="muted">Plain-English steps, documents, and official links.</p>
+      </div>
+
+      <!-- Flashcard -->
+      <div class="grid">
+        <a class="flip hero-flip" href="#visa-list" aria-label="Open student visa countries">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Open Country List</h3>
+              <p>Canada • UK • Germany • Italy • China</p>
+            </div>
+            <div class="card-back">
+              <p>See quick checklists for each country.</p>
+              <span class="btn ghost">View countries</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Country cards -->
+      <div id="visa-list" class="grid" style="margin-top:0.8rem">
+        <a class="card" href="./canada.html"><h3>Canada</h3><p>Study permit • Biometrics • Fees</p></a>
+        <a class="card" href="./uk.html"><h3>United Kingdom</h3><p>Student Route (Tier 4) • CAS • IHS</p></a>
+        <a class="card" href="./germany.html"><h3>Germany</h3><p>National Visa (D) • APS • Insurance</p></a>
+        <a class="card" href="./italy.html"><h3>Italy</h3><p>Type D visa • Funds • Accommodation</p></a>
+        <a class="card" href="./china.html"><h3>China</h3><p>X1/X2 visas • JW201/JW202</p></a>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Courses by Abbas -->
+    <section id="courses" class="section">
+      <div class="section-head">
+        <h2>Courses by Abbas</h2>
+        <p class="muted">Trending, job-ready computer courses with projects.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card"><h3>AI & Machine Learning</h3><p>Python • scikit-learn • TensorFlow</p></div>
+        <div class="card"><h3>Data Science & Analytics</h3><p>Pandas • SQL • Dashboards</p></div>
+        <div class="card"><h3>Full-Stack Web (React + Node)</h3><p>Auth • APIs • Deployment</p></div>
+        <div class="card"><h3>Mobile Apps (Flutter)</h3><p>UI • State • Firebase</p></div>
+        <div class="card"><h3>Cybersecurity Basics</h3><p>OWASP • Secure Coding • Labs</p></div>
+        <div class="card"><h3>DevOps & Cloud</h3><p>Docker • CI/CD • AWS</p></div>
+        <div class="card"><h3>LLMs & Prompt Engineering</h3><p>Open-source models • RAG</p></div>
+      </div>
+    </section>
+
+    <!-- Contact (simple block) -->
     <section id="contact" class="section">
       <div class="section-head">
         <h2>Contact</h2>
-        <p class="muted">Connect with us directly — quick and simple.</p>
+        <p class="muted">Please <strong>avoid direct calls</strong>. Message first to arrange a <strong>5-minute WhatsApp meeting</strong>; we’ll connect via call afterwards if needed.</p>
       </div>
 
-      <div class="card">
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/923110907878" target="_blank" rel="noopener">+92 311 090 7878</a> (Arrange a 5-minute meeting first, then call)</p>
-        <p><strong>Email:</strong> <a href="mailto:itsabbasanwar@gmail.com">itsabbasanwar@gmail.com</a></p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>WhatsApp (preferred)</h3>
+          <p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/923110907878">Message on WhatsApp</a></p>
+          <p class="muted">Number: +92 311 090 7878</p>
+        </div>
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:itsabbasanwar@gmail.com">itsabbasanwar@gmail.com</a></p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p><strong>Disclaimer:</strong> We share public information about fully funded opportunities only. No “done-base” or guaranteed outcomes. Always apply via official portals.</p>
       <p class="muted">© <span id="year"></span> abbas – studyportal</p>
     </div>
   </footer>
 
   <script>
+    // year
     document.getElementById('year').textContent = new Date().getFullYear();
+    // flip on click for mobile (optional)
+    document.querySelectorAll('.hero-flip').forEach(el => {
+      el.addEventListener('click', () => el.classList.toggle('flipped'));
+    });
   </script>
 </body>
 </html>
